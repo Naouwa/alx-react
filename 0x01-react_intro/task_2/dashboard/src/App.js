@@ -13,10 +13,10 @@ function App() {
         <p>Login to access the full dashboard</p>
 	<form>
 	  <label htmlFor="email">Email:</label>
-          <input type="email" name="email"></input>
+          <input type="email" id="email" name="email" autoComplete="username"></input>
           <label htmlFor="password">Password:</label>
-          <input type="password" name="password"></input>
-          <button>OK</button>
+          <input type="password" id="password" name="password" autocomplete="current-password"></input>
+          <button type="button">OK</button>
 	</form>
       </div>
       <footer className="App-footer">
