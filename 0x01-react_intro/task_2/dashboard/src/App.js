@@ -15,7 +15,7 @@ function App() {
 	  <label htmlFor="email">Email:</label>
           <input type="email" id="email" name="email" autoComplete="username"></input>
           <label htmlFor="password">Password:</label>
-          <input type="password" id="password" name="password" autocomplete="current-password"></input>
+          <input type="password" id="password" name="password" autoComplete="current-password"></input>
           <button type="button">OK</button>
 	</form>
       </div>
