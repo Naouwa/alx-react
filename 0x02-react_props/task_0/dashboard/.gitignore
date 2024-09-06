@@ -1,0 +1,30 @@
+# Node.js modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+
+# Dependency directories
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Webpack cache
+.cache/
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# npm package lock files (optional, if you use Yarn)
+yarn.lock
