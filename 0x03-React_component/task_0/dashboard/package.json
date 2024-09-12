@@ -52,5 +52,6 @@
     "transform": {
       "^.+\\.(js|jsx)$": "babel-jest"
     }
-  }
+  },
+  "description": ""
 }
