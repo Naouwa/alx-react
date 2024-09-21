@@ -8,6 +8,7 @@ describe("Testing <CourseListRow />", () => {
     expect(wrapper.find('th')).toHaveLength(1);
     expect(wrapper.find('th').prop('colSpan')).toEqual('2');
     expect(wrapper.find('th').text()).toEqual('first cell test');
+    expect(wrapper.find('tr').prop('style')).toHaveProperty('backgroundColor', '#deb5b545');
   });
 
   it("When isHeader is true test the component renders two cells when textSecondCell is present", () => {
@@ -15,6 +16,7 @@ describe("Testing <CourseListRow />", () => {
     expect(wrapper.find('th')).toHaveLength(2);
     expect(wrapper.find('th').at(0).text()).toEqual('first cell test');
     expect(wrapper.find('th').at(1).text()).toEqual('second cell test');
+    expect(wrapper.find('tr').prop('style')).toHaveProperty('backgroundColor', '#deb5b545');
   });
 
   it("When isHeader is false test the component renders correctly two td elements within a tr element", () => {
@@ -22,5 +24,6 @@ describe("Testing <CourseListRow />", () => {
     expect(wrapper.find('td')).toHaveLength(2);
     expect(wrapper.find('td').at(0).text()).toEqual('first cell test');
     expect(wrapper.find('td').at(1).text()).toEqual('second cell test');
+    expect(wrapper.find('tr').prop('style')).toHaveProperty('backgroundColor', '#f5f5f5ab');
   });
 });
